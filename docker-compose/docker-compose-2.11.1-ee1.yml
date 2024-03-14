@@ -1,7 +1,3 @@
-#docker compose -f docker-compose-releases-2.11.1-ee1.yml up --pull always
-
-# you see something in the logs like [opensearch-node1] Eliatra OpenSearch Enterprise Distro (https://opensearch.eliatra.com)
-
 version: '3'
 services:
   opensearch-node1:
