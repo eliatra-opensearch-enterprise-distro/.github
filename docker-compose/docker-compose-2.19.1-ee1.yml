@@ -1,7 +1,7 @@
 version: '3'
 services:
   opensearch-node1:
-    image: eliatra/opensearch-distro-releases:2.11.1-ee2
+    image: eliatra/opensearch-distro-releases:2.19.1-ee1
     container_name: opensearch-node1
     environment:
       - cluster.name=opensearch-cluster
@@ -25,7 +25,7 @@ services:
     networks:
       - opensearch-net-v2
   opensearch-node2:
-    image: eliatra/opensearch-distro-releases:2.11.1-ee2
+    image: eliatra/opensearch-distro-releases:2.19.1-ee1
     container_name: opensearch-node2
     environment:
       - cluster.name=opensearch-cluster
@@ -46,7 +46,7 @@ services:
     networks:
       - opensearch-net-v2
   opensearch-dashboards:
-    image: eliatra/opensearch-dashboards-distro-releases:2.11.1-ee2
+    image: eliatra/opensearch-dashboards-distro-releases:2.19.1-ee1
     container_name: opensearch-dashboards
     ports:
       - 5601:5601
